@@ -23,6 +23,7 @@ public class Data {
     ArrayList<String> arr_fecha;
     ArrayList<String> arr_telefono;
     ArrayList<String> arr_tarjeta;
+    ArrayList<String> arr_tarjeta2;
     ArrayList<String> arr_tipo;
     ArrayList<String> arr_fecha_tarjeta;
     ArrayList<String> arr_ccv;
@@ -42,6 +43,7 @@ public class Data {
         arr_fecha = new ArrayList<>();
         arr_telefono = new ArrayList<>();
         arr_tarjeta = new ArrayList<>();
+        arr_tarjeta2 = new ArrayList<>();
         arr_tipo = new ArrayList<>();
         arr_fecha_tarjeta = new ArrayList<>();
         arr_ccv = new ArrayList<>();
@@ -76,14 +78,15 @@ public class Data {
                 arr_fecha.add(info[5]);
                 arr_telefono.add(info[6]);
                 arr_tarjeta.add(info[7]);
-                arr_tipo.add(info[8]);
-                arr_fecha_tarjeta.add(info[9]);
-                arr_ccv.add(info[10]);
-                arr_dpi.add(info[11]);
-                arr_estado.add(info[12]);
-                arr_saldo.add(info[13]);
-                arr_fecha_corte.add(info[14]);
-                arr_fecha_pago.add(info[15]);
+                arr_tarjeta2.add(info[8]);
+                arr_tipo.add(info[9]);
+                arr_fecha_tarjeta.add(info[10]);
+                arr_ccv.add(info[11]);
+                arr_dpi.add(info[12]);
+                arr_estado.add(info[13]);
+                arr_saldo.add(info[14]);
+                arr_fecha_corte.add(info[15]);
+                arr_fecha_pago.add(info[16]);
             }
             
             System.out.println("Finaliza la carga de información.");
@@ -105,6 +108,8 @@ public class Data {
                     arr_telefono.get(i) + 
                     " *** " +
                     arr_tarjeta.get(i) + 
+                    " *** " +
+                    arr_tarjeta2.get(i) + 
                     " *** " +
                     arr_tipo.get(i) + 
                     " *** " +

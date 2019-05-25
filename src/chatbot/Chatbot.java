@@ -52,7 +52,7 @@ public class Chatbot {
     public void sendBotMessage(String message){
         
         JLabel bot_icon = new JLabel();
-//        bot_icon.setIcon(new ImageIcon(getClass().getClassLoader().getResource("resources/images/robot.png")));
+        bot_icon.setIcon(new ImageIcon(getClass().getClassLoader().getResource("resources/images/robot.png")));
         
         JLabel bot_msg = new JLabel();
         bot_msg.setText("<html><body style='width:360px;'>" + message + "</body></html>");
@@ -84,7 +84,7 @@ public class Chatbot {
     public void sendUserMessage(String message){
         
         JLabel user_icon = new JLabel();
-//        user_icon.setIcon(new ImageIcon(getClass().getClassLoader().getResource("resources/images/user.png")));
+       user_icon.setIcon(new ImageIcon(getClass().getClassLoader().getResource("resources/images/user.png")));
         
         JLabel user_msg = new JLabel();
         user_msg.setText("<html><body style='width:350px;'>" + message + "</body></html>");

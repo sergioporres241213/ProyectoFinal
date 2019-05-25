@@ -60,7 +60,7 @@ public class NaryTree {
                         
                         if("0".equals(dgl.data.arr_estado.get(subActionFlag))){
                             
-                            dgl.sendBotMessage("Tu tarjeta ya se encuentra bloqueada. No se realizo ninguna acción.");
+                            dgl.sendBotMessage("Tu tarjeta de credito ya se encuentra bloqueada. No se realizo ninguna acción.");
                             dgl.setActionFlag(0);
                             dgl.setSubActionFlag(0);
                             dgl.sendBotMessage(current.instruccion);
@@ -68,7 +68,7 @@ public class NaryTree {
                         }else{
                             
                             dgl.data.arr_estado.set(subActionFlag, "0");
-                            dgl.sendBotMessage("Tu tarjeta ha sido bloqueada exitosamente.");
+                            dgl.sendBotMessage("Tu tarjeta de credito ha sido bloqueada exitosamente.");
                             dgl.setActionFlag(0);
                             dgl.setSubActionFlag(0);
                             dgl.sendBotMessage(current.instruccion);
@@ -93,7 +93,7 @@ public class NaryTree {
                     if(dgl.data.arr_dpi.contains(dpi)){
                         
                         int posicion = dgl.data.arr_dpi.indexOf(dpi);
-                        dgl.sendBotMessage("He encontrado tu DPI.  Deseas bloquear la tarjeta con la numeracion: " + dgl.data.arr_tarjeta.get(posicion) + "?");
+                        dgl.sendBotMessage("He encontrado tu DPI.  Deseas bloquear la tarjeta de credito con la numeracion: xxxx-xxxx-xxxx-" + dgl.data.arr_tarjeta2.get(posicion) + "?");
                         dgl.setSubActionFlag(posicion);
                         
                     }else{
@@ -137,7 +137,7 @@ public class NaryTree {
                     if(dgl.data.arr_dpi.contains(dpi)){
                         
                         int posicion = dgl.data.arr_dpi.indexOf(dpi);
-                        dgl.sendBotMessage("He encontrado tu DPI.  Deseas conocer el saldo de la tarjeta con la numeracion: " + dgl.data.arr_tarjeta.get(posicion) + "?");
+                        dgl.sendBotMessage("He encontrado tu DPI.  Deseas conocer el saldo de la tarjeta de credito con la numeracion: xxxx-xxxx-xxxx-" + dgl.data.arr_tarjeta2.get(posicion) + "?");
                         dgl.setSubActionFlag(posicion);
                         
                     }else{
@@ -182,7 +182,7 @@ public class NaryTree {
                     if(dgl.data.arr_dpi.contains(dpi)){
                         
                         int posicion = dgl.data.arr_dpi.indexOf(dpi);
-                        dgl.sendBotMessage("He encontrado tu DPI.  Deseas conocer la fecha de corte de la tarjeta con la numeracion: " + dgl.data.arr_tarjeta.get(posicion) + "?");
+                        dgl.sendBotMessage("He encontrado tu DPI.  Deseas conocer la fecha de corte de la tarjeta de credito con la numeracion: xxxx-xxxx-xxxx-" + dgl.data.arr_tarjeta2.get(posicion) + "?");
                         dgl.setSubActionFlag(posicion);
                         
                     }else{
@@ -227,7 +227,7 @@ public class NaryTree {
                     if(dgl.data.arr_dpi.contains(dpi)){
                         
                         int posicion = dgl.data.arr_dpi.indexOf(dpi);
-                        dgl.sendBotMessage("He encontrado tu DPI.  Deseas conocer la fecha de pago de la tarjeta con la numeracion: " + dgl.data.arr_tarjeta.get(posicion) + "?");
+                        dgl.sendBotMessage("He encontrado tu DPI.  Deseas conocer la fecha de pago de la tarjeta de credito con la numeracion: xxxx-xxxx-xxxx-" + dgl.data.arr_tarjeta2.get(posicion) + "?");
                         dgl.setSubActionFlag(posicion);
                         
                     }else{
@@ -278,7 +278,7 @@ public class NaryTree {
                     if(dgl.data.arr_dpi.contains(dpi)){
                         
                         int posicion = dgl.data.arr_dpi.indexOf(dpi);
-                        dgl.sendBotMessage("He encontrado tu DPI.  Deseas conocer la información de la tarjeta con la numeracion: " + dgl.data.arr_tarjeta.get(posicion) + "?");
+                        dgl.sendBotMessage("He encontrado tu DPI.  Deseas conocer la información de la tarjeta de credito con la numeracion: xxxx-xxxx-xxxx-" + dgl.data.arr_tarjeta2.get(posicion) + "?");
                         dgl.setSubActionFlag(posicion);
                         
                     }else{
