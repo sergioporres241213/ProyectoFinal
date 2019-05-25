@@ -12,7 +12,7 @@ public class Conversation {
         tree = new NaryTree();
         
                raiz = tree.root = new Node("Hola! ¿Cómo Puedo Ayudarte? <br>"
-                + "Contamos con las Siguientes Opciones: "
+                + "Contamos con las Siguientes Opciones para tu tarjeta de credito: "
                 + "<br> 1. Bloqueo de Tarjeta "
                 + "<br> 2. Saldo Disponible "
                 + "<br> 3. Fecha de Corte"
